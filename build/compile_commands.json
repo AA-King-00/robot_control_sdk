@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/liao/Desktop/robot_control_sdk/build",
+  "command": "/usr/bin/g++  -I/home/liao/Desktop/robot_control_sdk/include -g -std=c++17 -o CMakeFiles/robot_control_sdk.dir/src/kinematics/fk_solver.cpp.o -c /home/liao/Desktop/robot_control_sdk/src/kinematics/fk_solver.cpp",
+  "file": "/home/liao/Desktop/robot_control_sdk/src/kinematics/fk_solver.cpp"
+},
+{
+  "directory": "/home/liao/Desktop/robot_control_sdk/build",
+  "command": "/usr/bin/g++  -I/home/liao/Desktop/robot_control_sdk/include -g -std=c++17 -o CMakeFiles/fk_demo.dir/examples/fk_demo.cpp.o -c /home/liao/Desktop/robot_control_sdk/examples/fk_demo.cpp",
+  "file": "/home/liao/Desktop/robot_control_sdk/examples/fk_demo.cpp"
+},
+{
+  "directory": "/home/liao/Desktop/robot_control_sdk/build",
+  "command": "/usr/bin/g++ -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -I/home/liao/Desktop/robot_control_sdk/include -isystem /home/liao/miniconda3/include -g -std=c++17 -o CMakeFiles/test_fk_solver.dir/tests/test_fk_solver.cpp.o -c /home/liao/Desktop/robot_control_sdk/tests/test_fk_solver.cpp",
+  "file": "/home/liao/Desktop/robot_control_sdk/tests/test_fk_solver.cpp"
+}
+]

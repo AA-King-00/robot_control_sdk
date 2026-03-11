@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "robot_control_sdk",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "fk_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fk_demo-Debug-19f8a62b6acf545e1448.json",
+					"name" : "fk_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_control_sdk::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_control_sdk-Debug-b11e896989e87d98ad11.json",
+					"name" : "robot_control_sdk",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_fk_solver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_fk_solver-Debug-81dd5499b90e14ee3cf4.json",
+					"name" : "test_fk_solver",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/liao/Desktop/robot_control_sdk/build",
+		"source" : "/home/liao/Desktop/robot_control_sdk"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
