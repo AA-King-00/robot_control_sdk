@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/fk_demo.dir/examples/fk_demo.cpp.o -o fk_demo  librobot_control_sdk.a 

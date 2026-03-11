@@ -1,0 +1,2 @@
+/usr/bin/ar qc librobot_control_sdk.a CMakeFiles/robot_control_sdk.dir/src/kinematics/fk_solver.cpp.o
+/usr/bin/ranlib librobot_control_sdk.a
