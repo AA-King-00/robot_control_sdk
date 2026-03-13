@@ -13,7 +13,7 @@ int main(){
     for (const auto& row :pose.T)
     {
         for (double v : row){
-            std::cout << v <<"";
+            std::cout << v <<" ";
         }
         std::cout << "\n";
     }

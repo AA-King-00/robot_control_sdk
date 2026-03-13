@@ -1,29 +1,19 @@
 #include <array>
 #include <gtest/gtest.h>
-
 #include "robot_control_sdk/kinematics/fk_solver.hpp"
 
-TEST(FKsolverTest, ReturnIdentityForInitialSkeleton) {
-    robot_control_sdk::kinematics::FKSolver solver;
-    std::array<double,6> q{0.0,0.0,0.0,0.0,0.0,0.0};
+using namespace robot_control_sdk::kinematics;
 
-    auto pose = solver.compute(q);
+TEST(FKSolverTest, ZeroPose){
 
-    EXPECT_DOUBLE_EQ(pose.T[0][0],1.0);
-    EXPECT_DOUBLE_EQ(pose.T[1][1],1.0);
-    EXPECT_DOUBLE_EQ(pose.T[2][2],1.0);
-    EXPECT_DOUBLE_EQ(pose.T[3][3],1.0);
+    FKSolver solver;
+    std::array<double,6> q_zero = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
-    EXPECT_DOUBLE_EQ(pose.T[0][1], 0.0);
-    EXPECT_DOUBLE_EQ(pose.T[0][2], 0.0);
-    EXPECT_DOUBLE_EQ(pose.T[0][3], 0.0);
-    EXPECT_DOUBLE_EQ(pose.T[1][0], 0.0);
-    EXPECT_DOUBLE_EQ(pose.T[1][2], 0.0);
-    EXPECT_DOUBLE_EQ(pose.T[1][3], 0.0);
-    EXPECT_DOUBLE_EQ(pose.T[2][0], 0.0);
-    EXPECT_DOUBLE_EQ(pose.T[2][1], 0.0);
-    EXPECT_DOUBLE_EQ(pose.T[2][3], 0.0);
-    EXPECT_DOUBLE_EQ(pose.T[3][0], 0.0);
-    EXPECT_DOUBLE_EQ(pose.T[3][1], 0.0);
-    EXPECT_DOUBLE_EQ(pose.T[3][2], 0.0);
+    Pose result = solver.compute(q_zero);
+
+    EXPECT_NEAR(result.T[0][3], -0.81725, 1e-5);
+    EXPECT_NEAR(result.T[1][3], -0.19145, 1e-5);
+    EXPECT_NEAR(result.T[2][3], -0.005491, 1e-5);
+
+    EXPECT_DOUBLE_EQ(result.T[3][3], 1.0);
 }
