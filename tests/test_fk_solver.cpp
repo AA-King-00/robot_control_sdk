@@ -7,6 +7,9 @@ using namespace robot_control_sdk::kinematics;
 TEST(FKSolverTest, ZeroPose){
 
     FKSolver solver;
+
+    ASSERT_TRUE(solver.loadDHParams("../config/ur5_dh.yaml"));
+    
     std::array<double,6> q_zero = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
     Pose result = solver.compute(q_zero);

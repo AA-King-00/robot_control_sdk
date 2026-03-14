@@ -5,7 +5,7 @@ project(robot_control_sdk VERSION 0.1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_EXPORT_COMILE_COMMANDS ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 enable_testing()
 
@@ -16,6 +16,13 @@ add_library(robot_control_sdk
 target_include_directories(robot_control_sdk
     PUBLIC
         ${PROJECT_SOURCE_DIR}/include
+)
+
+find_package(yaml-cpp REQUIRED)
+
+target_link_libraries(robot_control_sdk
+    PUBLIC 
+        yaml-cpp
 )
 
 add_executable(fk_demo
