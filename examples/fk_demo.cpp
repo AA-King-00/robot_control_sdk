@@ -5,6 +5,11 @@
 
 int main(){
     robot_control_sdk::kinematics::FKSolver solver;
+
+    if(!solver.loadDHParams("../config/ur5_dh.yaml")){
+        std::cerr << "Failed to load DH parameters!" << std::endl;
+        return -1;
+    }
     std::array<double,6> q{0.0,0.0,0.0,0.0,0.0,0.0};
 
     auto pose = solver.compute(q);
