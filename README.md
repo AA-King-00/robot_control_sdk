@@ -1,41 +1,41 @@
 # robot_control_sdk
 
-A personal robotics motion control SDK for learning, implementing, and validating robot control algorithms on UR5.
+一个用于学习、实现和验证机器人控制算法的个人机器人运动控制 SDK，目标平台为 UR5。
 
-## Goals
+## 项目目标
 
-- Build an industrial-style C++ robotics SDK
-- Implement core robotics modules from scratch
-- Validate algorithms in simulation and on real hardware
-- Build a strong engineering portfolio for robotics / embodied AI roles
+- 构建工业风格的 C++ 机器人 SDK
+- 从零实现核心机器人学模块
+- 在仿真环境和真实硬件上验证算法
+- 为机器人 / 具身智能方向打造扎实的工程作品集
 
-## Current Focus
+## 当前阶段
 
-Month 1: engineering foundation + forward kinematics
+第一个月：工程基础 + 正向运动学
 
-Current tasks:
-- Set up repository structure and coding rules
-- Implement UR5 forward kinematics in C++
-- Add unit tests with Google Test
-- Add CI build checks with GitHub Actions
-- Validate FK in simulation and on the real robot
+当前任务：
+- 搭建仓库结构与编码规范
+- 用 C++ 实现 UR5 正向运动学
+- 使用 Google Test 添加单元测试
+- 使用 GitHub Actions 添加 CI 构建检查
+- 在仿真和真实机器人上验证正向运动学结果
 
-## Project Structure
-
+## 项目结构
+```
 robot_control_sdk/
-├─ include/        # public headers
-├─ src/            # source files
-├─ tests/          # unit tests
-├─ examples/       # runnable examples
-├─ config/         # robot parameters and yaml files
-├─ docs/           # notes and design docs
-├─ scripts/        # helper scripts
-└─ .github/        # CI workflows
+├─ include/        # 公共头文件
+├─ src/            # 源文件
+├─ tests/          # 单元测试
+├─ examples/       # 可运行示例
+├─ config/         # 机器人参数与 yaml 配置文件
+├─ docs/           # 笔记与设计文档
+├─ scripts/        # 辅助脚本
+└─ .github/        # CI 工作流
+```
 
-## Build
-
-```bash
+## 构建方法
+bash
 mkdir -p build
 cd build
 cmake ..
-make -j  
+make -j
