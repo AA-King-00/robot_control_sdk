@@ -1,29 +1,29 @@
-Start testing: Mar 11 16:18 CST
+Start testing: Mar 14 14:30 CST
 ----------------------------------------------------------
 1/1 Testing: test_fk_solver
 1/1 Test: test_fk_solver
 Command: "/home/liao/Desktop/robot_control_sdk/build/test_fk_solver"
 Directory: /home/liao/Desktop/robot_control_sdk/build
-"test_fk_solver" start time: Mar 11 16:18 CST
+"test_fk_solver" start time: Mar 14 14:30 CST
 Output:
 ----------------------------------------------------------
 Running main() from /croot/yaml-cpp-split_1714510678659/work/test/gtest-1.11.0/googletest/src/gtest_main.cc
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 1 test from FKsolverTest
-[ RUN      ] FKsolverTest.ReturnIdentityForInitialSkeleton
-[       OK ] FKsolverTest.ReturnIdentityForInitialSkeleton (0 ms)
-[----------] 1 test from FKsolverTest (0 ms total)
+[----------] 1 test from FKSolverTest
+[ RUN      ] FKSolverTest.ZeroPose
+[       OK ] FKSolverTest.ZeroPose (0 ms)
+[----------] 1 test from FKSolverTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (0 ms total)
+[==========] 1 test from 1 test suite ran. (1 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"test_fk_solver" end time: Mar 11 16:18 CST
+"test_fk_solver" end time: Mar 14 14:30 CST
 "test_fk_solver" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 11 16:18 CST
+End testing: Mar 14 14:30 CST

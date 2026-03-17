@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/fk_demo.dir/examples/fk_demo.cpp.o -o fk_demo  librobot_control_sdk.a 
+/usr/bin/g++ -g CMakeFiles/fk_demo.dir/examples/fk_demo.cpp.o -o fk_demo  librobot_control_sdk.a /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0 

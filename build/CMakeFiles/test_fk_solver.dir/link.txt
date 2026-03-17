@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/test_fk_solver.dir/tests/test_fk_solver.cpp.o -o test_fk_solver  -Wl,-rpath,/home/liao/miniconda3/lib librobot_control_sdk.a /home/liao/miniconda3/lib/libgtest_main.so.1.11.0 /home/liao/miniconda3/lib/libgtest.so.1.11.0 
+/usr/bin/g++ -g CMakeFiles/test_fk_solver.dir/tests/test_fk_solver.cpp.o -o test_fk_solver  -Wl,-rpath,/home/liao/miniconda3/lib librobot_control_sdk.a /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0 /home/liao/miniconda3/lib/libgtest_main.so.1.11.0 /home/liao/miniconda3/lib/libgtest.so.1.11.0 

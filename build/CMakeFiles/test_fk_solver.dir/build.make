@@ -93,6 +93,7 @@ test_fk_solver_EXTERNAL_OBJECTS =
 test_fk_solver: CMakeFiles/test_fk_solver.dir/tests/test_fk_solver.cpp.o
 test_fk_solver: CMakeFiles/test_fk_solver.dir/build.make
 test_fk_solver: librobot_control_sdk.a
+test_fk_solver: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0
 test_fk_solver: /home/liao/miniconda3/lib/libgtest_main.so.1.11.0
 test_fk_solver: /home/liao/miniconda3/lib/libgtest.so.1.11.0
 test_fk_solver: CMakeFiles/test_fk_solver.dir/link.txt

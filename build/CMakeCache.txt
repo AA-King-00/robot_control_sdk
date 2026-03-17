@@ -212,6 +212,9 @@ robot_control_sdk_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 robot_control_sdk_SOURCE_DIR:STATIC=/home/liao/Desktop/robot_control_sdk
 
+//The directory containing a CMake configuration file for yaml-cpp.
+yaml-cpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp
+
 
 ########################
 # INTERNAL cache entries

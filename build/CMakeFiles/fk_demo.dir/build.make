@@ -93,6 +93,7 @@ fk_demo_EXTERNAL_OBJECTS =
 fk_demo: CMakeFiles/fk_demo.dir/examples/fk_demo.cpp.o
 fk_demo: CMakeFiles/fk_demo.dir/build.make
 fk_demo: librobot_control_sdk.a
+fk_demo: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0
 fk_demo: CMakeFiles/fk_demo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liao/Desktop/robot_control_sdk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable fk_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fk_demo.dir/link.txt --verbose=$(VERBOSE)
